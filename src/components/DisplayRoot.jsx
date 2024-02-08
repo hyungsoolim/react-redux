@@ -1,10 +1,10 @@
 import DisplayNumber from "./DisplayNumber";
 
-const DisplayRoot = () => {
+const DisplayRoot = ({number}) => {
   return (
     <div>
       <h1>Display Root</h1>
-      <DisplayNumber/>
+      <DisplayNumber number={number}/>
     </div>
   )
 }

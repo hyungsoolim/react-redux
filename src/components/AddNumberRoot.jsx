@@ -1,10 +1,12 @@
 import AddNumber from "./AddNumber";
 
-const AddNumberRoot = () => {
+const AddNumberRoot = ({handleOnClick}) => {
   return (
     <div>
       <h1>Add Number Root</h1>
-      <AddNumber/>
+      <AddNumber handleOnClick={(size) => {
+        handleOnClick(size);
+      }}/>
     </div>
   )
 }
