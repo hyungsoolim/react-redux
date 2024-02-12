@@ -1,10 +1,10 @@
-import AddNumber from "./AddNumber";
+import AddNumberContainer from "../containers/AddNumberContainer";
 
 const AddNumberRoot = ({handleOnClick}) => {
   return (
     <div>
       <h1>Add Number Root</h1>
-      <AddNumber handleOnClick={(size) => {
+      <AddNumberContainer handleOnClick={(size) => {
         handleOnClick(size);
       }}/>
     </div>

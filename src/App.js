@@ -13,7 +13,7 @@ const App = () => {
       <AddNumberRoot handleOnClick={(size) => {
         setNumber(number + size);
       }}/>
-      <DisplayRoot number={number} />
+      <DisplayRoot />
     </div>
   );
 }

@@ -1,4 +1,15 @@
-const DisplayNumber = ({number}) => {
+import store from "../store"
+import {useEffect, useState} from "react";
+
+const DisplayNumber = () => {
+
+  // const [number, setNumber] = useState(store.getState().number);
+  const [number, setNumber] = useState(store.getState().number);
+
+  useEffect(() => {
+    store.subscribe(() => setNumber(store.getState().number))
+  }, [store.getState().number]);
+
   return (
     <div>
       <h1>Display Number</h1>

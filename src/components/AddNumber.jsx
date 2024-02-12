@@ -1,14 +1,14 @@
 import {useState} from "react";
 
-const AddNumber = ({handleOnClick}) => {
+const AddNumber = ({onClick}) => {
   const [size, setSize] = useState(1);
   return (
     <div>
       <h1>Add Number</h1>
       <input type={"button"} value={"+"}
-      onClick={() => {
-        handleOnClick(size);
-      }}
+             onClick={() => {
+               onClick(size);
+             }}
       />
       <input type={"text"} value={size}
              onChange={(e) => {
