@@ -1,13 +1,13 @@
-import { createStore } from "redux";
+import {legacy_createStore as createStore} from "redux";
 
 export default createStore((state, action) => {
-  if(!state) {
+  if (!state) {
     return {number: 0}
   }
 
-  if(action.type === "INCREMENT") {
+  if (action.type === "INCREMENT") {
     return {...state, number: state.number + action.size}
   }
 
   return state;
-},  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+}, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

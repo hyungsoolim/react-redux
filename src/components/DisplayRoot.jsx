@@ -4,7 +4,7 @@ const DisplayRoot = () => {
   return (
     <div>
       <h1>Display Root</h1>
-      <DisplayNumberContainer/>
+      <DisplayNumberContainer unit={"kg"}/>
     </div>
   )
 }

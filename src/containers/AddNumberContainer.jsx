@@ -1,11 +1,14 @@
 import AddNumber from "../components/AddNumber";
-import store from "../store"
+import {connect} from "react-redux";
 
-const AddNumberContainer = () => {
-  return <AddNumber onClick={(size) => {
-    store.dispatch({type: "INCREMENT", size: size})
-  }
-  }/>;
-};
-
-export default AddNumberContainer;
+export default connect()(AddNumber);
+// import store from "../store"
+//
+// const AddNumberContainer = () => {
+//   return <AddNumber onClick={(size) => {
+//     store.dispatch({type: "INCREMENT", size: size})
+//   }
+//   }/>;
+// };
+//
+// export default AddNumberContainer;
